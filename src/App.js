@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "highlight.js/styles/atom-one-dark.css";
+import CodeBlock from "./components/CodeBlock";
 
 function App() {
+  const code = `function helloWorld() {
+    console.log("Hello, world!");
+    const arr = [1,2,3]
+   }`;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">How to use highlight js in React project</div>
+      <div className="App-main">
+        <CodeBlock language="javascript" code={code} />
+      </div>
     </div>
   );
 }
