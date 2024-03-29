@@ -1,17 +1,29 @@
 import "./App.css";
-import "highlight.js/styles/atom-one-dark.css";
-import CodeBlock from "./components/CodeBlock";
+import { code } from "./assets/code";
+import CodeBlockBlack from "./components/CodeBlockBlack";
+// import CodeBlockLight from "./components/CodeBlockLight";
 
 function App() {
-  const code = `function helloWorld() {
-    console.log("Hello, world!");
-    const arr = [1,2,3]
-   }`;
   return (
     <div className="App">
       <div className="App-header">How to use highlight js in React project</div>
       <div className="App-main">
-        <CodeBlock language="javascript" code={code} />
+        <div>
+          <p>
+            the code below shows the{" "}
+            <span className="App-code">atom-one-dark.css</span> highlight.js
+            provides.
+          </p>
+          <CodeBlockBlack language="javascript" code={code.code_js} />
+        </div>
+        {/* <div>
+          <p>
+            the code below shows the{" "}
+            <span className="App-code">atom-one-light.css</span> highlight.js
+            provides.
+          </p>
+          <CodeBlockLight language="javascript" code={code.code_js} />
+        </div> */}
       </div>
     </div>
   );

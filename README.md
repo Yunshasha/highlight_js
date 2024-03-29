@@ -6,7 +6,6 @@ Highlight.js library is an open-source javascript library that provides code sni
 <br/>
 Highlight.js works by analyzing the code to be highlighted and generating HTML markup that is styled with CSS. This makes it easy to integrate with web applications and other platforms that use HTML and CSS.
 <br/>
-<br/>
 
 install highlight.js library
 
@@ -22,7 +21,6 @@ you can find all the styles with any language highlight.js provides on [highligh
 
 you can customize your own code block styles and import it as a css file. and also you can overwirte the css file provide by highlight.js. you just need to check the orignal class of each code, for example: `hljs-keyword`, `hljs-params`, `hljs-title function_` ect.
 
-<br/>
 <br/>
 
 also you can find great tutorial acticles by [friendstudio team!](https://www.friendstudio.net/how-to-use-highlightjs-with-react/)

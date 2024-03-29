@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/atom-one-dark.css";
 
-const CodeBlock = ({ language, code }) => {
-  const codeBlockRef = useRef(null);
+const CodeBlockBlack = ({ language, code }) => {
+  const codeBlockRef = useRef();
 
   useEffect(() => {
     hljs.highlightBlock(codeBlockRef.current);
-  }, [codeBlockRef]);
+  }, []);
 
   return (
     <pre>
@@ -18,4 +18,4 @@ const CodeBlock = ({ language, code }) => {
   );
 };
 
-export default CodeBlock;
+export default CodeBlockBlack;

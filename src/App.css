@@ -13,6 +13,11 @@
 }
 .App-main{
   margin: 10px auto;
-
+  min-width: 70%;
   font-size: 18px;
+}
+.App-code {
+  background-color: #e9e8e8;
+  border-radius: 8px;
+  font-weight: 600;
 }
